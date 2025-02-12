@@ -1,0 +1,142 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9F7;
+    color: #252B2B;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background: #252B2B;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left {
+    width: 50%;
+    display: flex;         
+    justify-content: flex-end;  
+    margin-right: 15px;
+}
+
+header .left img {
+    max-width: 150px;
+    height: auto;
+}
+
+header .right {
+    flex: 2;
+    text-align: left;
+    margin-left: 15px;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.sections-container {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+/* Ajuste para as seções específicas */
+#beneficios, #para-quem {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+section {
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+p {
+    max-width: 800px;
+   
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+li {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-2px);
+}
+
+#beneficios li, #para-quem li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background: #E1544B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #C70039;
+    transform: translateY(-2px);
+}
+
+#download {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px 10px;
+    }
+    
+    section {
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+    
+    h1 {
+        font-size: 1.75em;
+    }
+    
+    .cta-button {
+        padding: 12px 24px;
+    }
+}
